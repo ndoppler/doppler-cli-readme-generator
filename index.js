@@ -37,7 +37,7 @@ const questions = [
     {
         message: 'What is the e-mail address that you will accept inquiries?',
         name: "appEmail"
-    },
+    }
 ];
 
 // TODO: Create a function to write README file

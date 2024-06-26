@@ -11,33 +11,37 @@ const questions = [
     },
     {
         message: "Please provide a description of your application.",
-        name: "appDescription"
+        name: "description"
     },
     {
         message: "Please provide the installation instructions for your application.",
-        name: "appInstallation"
+        name: "installation"
+    },
+    {
+        message: "Please provide the usage instructions for your application.",
+        name: "usage"
     },
     {
         message: "Please provide the guidelines to contribute to your application.",
-        name: "appContributions"
+        name: "contributions"
     },
     {
         message: "Please provide the test instructions for your application.",
-        name: "appTests"
+        name: "tests"
     },
     {
         type: 'list',
         message: 'Please select a license from the list below, or choose "None" if you would prefer to continue without a license.',
-        name: "appLicense",
+        name: "license",
         choices: ["None", "Apache License 2.0", "GNU General Public License v3.0", "MIT License"]
     },
     {
         message: 'What is the GitHub Username associated with your application?',
-        name: "appGitHub"
+        name: "github"
     },
     {
         message: 'What is the e-mail address that you will accept inquiries?',
-        name: "appEmail"
+        name: "email"
     }
 ];
 

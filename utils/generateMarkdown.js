@@ -2,7 +2,7 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (license !== "None") {
-    return `     ![Static Badge](https://img.shields.io/badge/${license}-blue)`
+    return `![Static Badge](https://img.shields.io/badge/${license}-blue)`
   }
   return ""
 }
@@ -20,9 +20,9 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (license !== "None") {
-    return `This application is covered under the ${license}.`
+    return `\n\n## License \nThis application is covered under the ${license}.`
   }
-  return "This application is not covered under any license."
+  return ""
 }
 
 // TODO: Create a function to generate markdown for README
@@ -49,13 +49,11 @@ ${data.usage}
 ${data.contributions}
 
 ## Tests
-${data.tests}
-
-## License
-${renderLicenseSection(data.license)}
+${data.tests}${renderLicenseSection(data.license)}
 
 ## Questions
-For any questions about this application please feel free to email me at ${data.email}
+For any questions about this application please feel free to email me at ${data.email}.\n\n
+Check out my [GitHub profile](https://github.com/${data.github}) and follow me if you like my work!
 `;
 }
 

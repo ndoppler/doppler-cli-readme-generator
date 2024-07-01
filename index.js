@@ -33,7 +33,7 @@ const questions = [
         type: 'list',
         message: 'Please select a license from the list below, or choose "None" if you would prefer to continue without a license.',
         name: "license",
-        choices: ["None", "Apache License 2.0", "GNU General Public License v3.0", "MIT License"]
+        choices: ["None", "Apache License 2.0", "GNU General Public License v3.0"]
     },
     {
         message: 'What is the GitHub Username associated with your application?',
